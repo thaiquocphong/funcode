@@ -436,3 +436,15 @@
 .input-group-append {
     cursor: pointer;
   }
+
+.float-contact {
+    position: fixed;
+    bottom: 40%;
+    left: 20px;
+    z-index: 99999;
+  }
+.chat-zalo, .chat-facebook, .call-hotline, .send-email {
+    display: block;
+    margin-bottom: 14px;
+    line-height: 0;
+  }
