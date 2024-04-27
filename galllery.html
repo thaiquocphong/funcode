@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
+    <meta charset="utf-8">
     <title>funCODE - VUI LẬP TRÌNH</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
+
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -29,6 +30,7 @@
     
     <!-- Template Stylesheet -->
     <link href='static/bootstrap/css/style.css' rel="stylesheet">
+    <link href='static/bootstrap/css/gallery.css' rel="stylesheet">
 </head>
 
 <body>
@@ -69,107 +71,113 @@
             </div>            
         </div>
     </nav>
-    <!-- Navbar End -->    
+    <!-- Navbar End -->
 
-    <!-- Register Start -->    
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col">
-        <div class="card card-registration my-4">
-          <div class="row g-0">
-            <div class="col-xl-6 d-none d-xl-block">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
-                alt="Sample photo" class="img-fluid"
-                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white fw-bold animated slideInDown">Chúng tôi trả lời</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item text-white fw-bold" aria-current="page">Nhiệt tình</a></li>
+                            <li class="breadcrumb-item text-white fw-bold" aria-current="page">Đầy đủ</a></li>
+                            <li class="breadcrumb-item text-white fw-bold active" aria-current="page">Hiệu quả</li>
+                        </ol>
+                    </nav>
+                </div>
             </div>
-            <div class="col-xl-6">
-              <div class="card-body p-md-5 text-black">
-                <h3 class="mb-5 text-uppercase text-center">ĐĂNG KÝ HỌC THỬ LẬP TRÌNH</h3>
-                
-                <form id="myRegForm" class="px-md-2" method="POST">
-                
-                <div class="form-outline mb-4">
-                  <input type="text" id="hovatenhocvien" name="hovatenhocvien" class="form-control form-control-lg" required />
-                  <label class="form-label" for="form3Example297">Họ và tên học viên</label>
-                </div>
-
-                <div class="form-outline mb-4">
-                  <input type="text" id="tenchame" name="tenchame" class="form-control form-control-lg" required/>
-                  <label class="form-label" for="form3Example197">Tên cha hoặc tên mẹ</label>
-                </div>
-
-                <div class="form-outline mb-4">
-                  <input type="text" id="email" name="email" class="form-control form-control-lg" required/>
-                  <label class="form-label" for="form3Example197">Email</label>
-                </div>
-
-                <div class="form-outline mb-4">
-                  <input type="text" id="dienthoai" name="dienthoai" class="form-control form-control-lg" required/>
-                  <label class="form-label" for="form3Example8">Số điện thoại</label>
-                </div>
-
-                <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
-
-                  <h6 class="mb-0 me-4">Giới tính học viên: </h6>
-
-                  <div class="form-check form-check-inline mb-0 me-4">
-                    <input class="form-check-input" type="radio" name="gioitinhnu" id="gioitinhnu"
-                      value="Nữ" required/>
-                    <label class="form-check-label" for="gioitinhnu">Nữ</label>
-                  </div>
-
-                  <div class="form-check form-check-inline mb-0 me-4">
-                    <input class="form-check-input" type="radio" name="gioitinhnam" id="gioitinhnam"
-                      value="Nam" />
-                    <label class="form-check-label" for="gioitinhnam">Nam</label>
-                  </div>
-
-                  <div class="form-check form-check-inline mb-0">
-                    <input class="form-check-input" type="radio" name="gioitinhkhac" id="gioitinhkhac"
-                      value="Khác" />
-                    <label class="form-check-label" for="gioitinhkhac">Khác</label>
-                  </div>
-                </div>
-              </br>
-                <div class="form-outline mb-4">
-                    <label for="appt">Chọn thời gian học thử:</label>
-                    <input type="time" class="form-control" id="thoigian" name="thoigian" required> 
-                </div>
-            </br>
-                <div class="form-outline mb-4">
-                    <label for="appt">Chọn ngày học thử:</label>
-                    <input type="date" class="form-control" id="ngay" name="ngay" required> 
-                </div>
-            </br>
-                     <div class="form-group form-outline mb-4">
-                        <label>Các khóa học lập trình:</label>                        
-                        <select class="form-control" id="khoahoc" name="khoahoc" required>
-                        <option>Chọn khóa học lập trình</option>
-                        <option>Lập trình Scratch</option>
-                        <option>Lập trình Microbit, Arduino Uno, Robots</option>
-                        <option>Lập trình ứng dụng di động</option>
-                        <option>Lập trình Python</option>
-                        <option>Lập trình Roblox</option>
-                        <option>Lập trình Html, Css, Js</option>
-                        <option>Thiết kế và lập trình 3D game</option>
-                        </select>
-                    </div>               
-                <div class="d-flex justify-content-end pt-3">
-                  <button type="reset" class="btn btn-light btn-lg">Nhập lại</button>
-                  <button type="submit" class="btn btn-warning btn-lg ms-2">Đăng ký học thử</button>
-                </div>
-
-              </div>
-            </div>
-            </form>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-    <!-- Register End -->
+    <!-- Header End -->
     
-  <!-- Footer Start -->
+    <!-- Q&A Start -->
+<section class="container-cover">
+    <div class="container-gallery">
+        <div class=" heading">CODING CLASSES</div>
+        <div class="large-image">
+            <img src='static/bootstrap/img/img1.jpeg' alt="Hình minh họa" />
+        </div>
+        <div class="small-image">
+            <div>
+                <img src='static/bootstrap/img/img1.jpeg' alt="Hình minh họa" />
+            </div>
+            <div>
+                <img src='static/bootstrap/img/img2.jpeg' alt="Hình minh họa" />
+            </div>
+            <div>
+                <img src='static/bootstrap/img/img3.jpeg' alt="Hình minh họa" />
+            </div>
+            <div>
+                <img src='static/bootstrap/img/img4.jpeg' alt="Hình minh họa" />
+            </div>
+            <div>
+                <img src='static/bootstrap/img/img5.jpeg' alt="Hình minh họa" />
+            </div>
+            <div>
+                <img src='static/bootstrap/img/img6.jpeg' alt="Hình minh họa" />
+            </div>
+            <div>
+                <img src='static/bootstrap/img/img7.jpeg' alt="Hình minh họa" />
+            </div>
+            <div>
+                <img src='static/bootstrap/img/img8.jpeg' alt="Hình minh họa" />
+            </div>
+            <div>
+                <img src='static/bootstrap/img/img9.jpeg' alt="Hình minh họa" />
+            </div>
+        </div>
+    </div>
+  </section>
+    <!-- Q&A End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Lời chứng thực</h6>
+                <h1 class="mb-5">Học viên nói về chúng tôi!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src='static/bootstrap/img/testimonial-1.jpg' style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Nguyễn Hoàng Nhật Vương</h5>
+                    <p>Lớp 5</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Em thấy học tại đây khá là vui, giáo viên cung cấp cho em nhiều kiến thức lập trình thú vị.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src='static/bootstrap/img/testimonial-2.jpg' style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Đỗ Nguyễn Anh Tú</h5>
+                    <p>Lớp 10</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Học phí hơi cao, nhưng bù lại học lập trình rất chất lượng ạ. Em thích nhất học lập trình game</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src='static/bootstrap/img/testimonial-3.jpg' style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Nguyễn Hoàng An</h5>
+                    <p>Lớp 2</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Dạ, con thấy lớp học vui lắm, thầy cho con trải nghiệm các trò chơi khác nhau để giúp con suy nghĩ sâu.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src='static/bootstrap/img/testimonial-4.jpg' style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Nguyễn Thị Hoàng Yến</h5>
+                    <p>Lớp 8</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Trước đây, con ghét lập trình lắm, nhưng nhờ Vui Lập Trình mà em say mê nó rồi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
@@ -197,22 +205,22 @@
                     <h4 class="text-white mb-3">Thư viện ảnh</h4>
                     <div class="row g-2 pt-2">
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src='static/bootstrap/img/course-1.png'  alt="">
+                            <img class="img-fluid bg-light p-1" src='static/bootstrap/img/course-1.png' alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src='static/bootstrap/img/course-2.jpg'  alt="">
+                            <img class="img-fluid bg-light p-1" src='static/bootstrap/img/course-2.jpg' alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src='static/bootstrap/img/course-3.png'  alt="">
+                            <img class="img-fluid bg-light p-1" src='static/bootstrap/img/course-3.png' alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src='static/bootstrap/img/course-4.png'  alt="">
+                            <img class="img-fluid bg-light p-1" src='static/bootstrap/img/course-4.png' alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src='static/bootstrap/img/course-5.png'  alt="">
+                            <img class="img-fluid bg-light p-1" src='static/bootstrap/img/course-5.png' alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src='static/bootstrap/img/course-6.png'  alt="">
+                            <img class="img-fluid bg-light p-1" src='static/bootstrap/img/course-6.png' alt="">
                         </div>
                     </div>
                 </div>
@@ -265,48 +273,7 @@
 
     <!-- Template Javascript -->
     <script src='static/bootstrap/js/main.js'></script>
-
-    !-- Email JS -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("S3h679VIk7uJJhoAP");
-      })();
-    </script>
-    <script>
-      // listen to the form submission
-      document
-        .getElementById("myRegForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          const serviceID = "service_420owke";
-          const templateID = "template_yc7pc5a";
-
-          // send the email here
-          emailjs.sendForm(serviceID, templateID, this).then(
-            (response) => {
-              console.log("SUCCESS!", response.status, response.text);
-              confirm("Bạn đăng ký học thử thành công!\n   Chúng tôi sẽ phản hồi trong thời gian sớm nhất");
-              document.getElementById("hovatenhocvien").value = "";
-              document.getElementById("tenchame").value = "";
-              document.getElementById("email").value = "";
-              document.getElementById("dienthoai").value = "";
-              document.getElementById("gioitinhnu").value = "";
-              document.getElementById("thoigian").value = "";
-              document.getElementById("ngay").value = "";
-              document.getElementById("khoahoc").value = "";
-            },
-            (error) => {
-              console.log("Chưa đăng ký được...", error);
-              confirm("Chưa đăng ký được...", error);
-            }
-          );
-        });
-    </script>
+    <script src='static/bootstrap/js/gallery.js'></script>
 </body>
 
 </html>
