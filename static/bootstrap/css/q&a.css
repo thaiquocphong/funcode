@@ -4,7 +4,7 @@
     justify-content: center;
 }
 
-.accordion{
+.accordion-cover{    
     max-width: 90%;
     width: 100%;
     background: #FFF;
@@ -13,7 +13,7 @@
     border-radius: 8px;
     box-shadow:  0 0 4px rgba(0,0,0,0.2);
 }
-.accordion .accordion-content{
+.accordion-cover .accordion-content{    
     margin: 10px 0;
     border-radius: 4px;
     background: #FFF7F0;
@@ -45,7 +45,7 @@
 }
 .accordion-content header{
     display: flex;
-    min-height: 50px;
+    min-height: 60px;
     padding: 0 15px;
     cursor: pointer;
     align-items: center;
@@ -61,11 +61,11 @@
     color: #2db7dd;
 }
 .accordion-content header i{
-    font-size: 20px;
+    font-size: 25px;
     color: #2db7dd;
 }
 .accordion-content .description{
-    height: 0;
+    height: 0px;
     font-size: 18px;
     color: #333;
     font-weight: 400;
