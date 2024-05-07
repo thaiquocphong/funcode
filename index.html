@@ -31,7 +31,7 @@
     <link href='static/bootstrap/css/style.css' rel="stylesheet">
 </head>
 
-<body>
+<body onkeydown="return false">
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -475,7 +475,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src='static/bootstrap/img/Thaopicture.JPG' alt="">
+                            <img class="img-fluid" src='static/bootstrap/img/Thaopicture.jpg' alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -503,8 +503,8 @@
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">Jony Evant</h5>
-                            <small>Lập trình viên 12 năm kinh nghiệm</small>
+                            <h5 class="mb-0">Lưu Quốc Thịnh</h5>
+                            <small>Lập trình viên 15 năm kinh nghiệm</small>
                         </div>
                     </div>
                 </div>
@@ -521,8 +521,8 @@
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">Helent Bechend</h5>
-                            <small>Lập trình viên 10 năm kinh nghiệm</small>
+                            <h5 class="mb-0">Nguyễn Quốc Tuấn</h5>
+                            <small>Lập trình viên 30 năm kinh nghiệm</small>
                         </div>
                     </div>
                 </div>
@@ -577,7 +577,7 @@
     </div>
     <!-- Testimonial End -->
 
-    <!-- Connect Start -->
+    <!-- Connect Start -->href = 'mailto:thaiphongstu@gmail.com'
     <div class="float-contact">
         <div class="chat-zalo">
             <a href="https://zalo.me/0797300984" target="_blank"><img title="Chat Zalo" src='static/bootstrap/img/zalo-icon.png' alt="zalo-icon" width="40" height="40" /></a>
@@ -690,6 +690,50 @@
 
     <!-- Template Javascript -->
     <script src='static/bootstrap/js/main.js'></script>
+
+<script type='text/javascript'>
+    checkCtrl = false $('*').keydown(function(e) {
+        if (e.keyCode == '17') {
+            checkCtrl = false
+        }
+    }).keyup(function(ev) {
+        if (ev.keyCode == '17') {
+            checkCtrl = false
+        }
+    }).keydown(function(event) {
+        if (checkCtrl) {
+            if (event.keyCode == '85') {
+                return false;
+            }
+        }
+    })
+</script>
+
+<script type='text/javascript'>
+    var message = "NoRightClicking";
+    function defeatIE() {
+        if (document.all) {
+            (message);
+            return false;
+        }
+    }
+    function defeatNS(e) {
+        if (document.layers || (document.getElementById && !document.all)) {
+            if (e.which == 2 || e.which == 3) {
+                (message);
+                return false;
+            }
+        }
+    }
+    if (document.layers) {
+        document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown = defeatNS;
+    } else {
+        document.onmouseup = defeatNS;
+        document.oncontextmenu = defeatIE;
+    }
+    document.oncontextmenu = new Function("return false")
+</script>
 </body>
 
 </html>
