@@ -126,6 +126,19 @@
     transition: .5s;
 }
 
+.navbar-nav .btn {
+    margin-right: 0 !important;
+}
+.navbar .btn-primary {
+    color: #ffffff;
+    border: 1px solid var(--primary);
+}
+
+.navbar .btn-primary:hover {
+    background-color: #98ef62;
+    color: var(--light) !important;
+}
+
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
         display: block;
