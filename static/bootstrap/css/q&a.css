@@ -70,5 +70,7 @@
     color: #333;
     font-weight: 400;
     padding: 0px 15px;
+    overflow: hidden;
     transition: all 0.2s linear;
 }
+
